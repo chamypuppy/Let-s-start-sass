@@ -1,0 +1,59 @@
+// ex 1
+
+/* 여러 줄 주석만 보입니다. */
+
+nav {
+  background: lightskyblue;
+  padding: 10px;
+  height: 50px;
+
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    li{
+      color: #fff;
+      margin-right: 10px;
+    }
+  }
+}
+
+// ex 2
+
+.background-img {
+  width: 100%;
+  height: auto;
+  background: {
+    image: url(https://img.etoday.co.kr/pto_db/2023/01/600/20230105154144_1838249_701_876.jpg);
+    position : center center;
+    repeat: no-repeat; 
+  }
+}
+
+// ex 3
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: lightcoral;
+  transition: all 1s ease-in-out;
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+// ex 4
+
+.one {
+  color: red;
+  .two {
+    color: green;
+    .three {
+      color: blue;
+      @at-root p {
+        color: lightblue;
+      }
+    }
+  }
+}
