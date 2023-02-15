@@ -57,3 +57,20 @@ nav {
     }
   }
 }
+
+// 2강. 변수
+
+$bgColorrr : lightgreen;
+$font-h1: 2.8rem;
+$location: left, center, right;
+$maps-font-size: ("maps-key1": 4rem, "maps-key2": 1.2rem, "maps-key3": 7rem);
+
+h1 {
+  color: $bgColorrr;
+  // font-size: $font-h1;
+  font-size: map-get($maps-font-size, "maps-key2") * 2;
+}
+
+p {
+  text-align: nth($location, 2);
+}
